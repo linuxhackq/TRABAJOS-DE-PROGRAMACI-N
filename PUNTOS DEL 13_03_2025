@@ -1,0 +1,19 @@
+Algoritmo PUNTO_1
+
+	escribir "¿Cuántos productos vas a registras?"
+	leer CantidadProductos
+	definir CostoTotal como real
+	CostoTotal = 0
+	
+	para i <- 1 hasta CantidadProductos hacer
+		escribir "¿Cual es el nombre del producto?"
+		leer Producto
+		escribir "precio del producto"
+		leer precio
+		
+		CostoTotal = CostoTotal + precio
+	
+	FinPara
+	escribir "el costo total a gastar es: " CostoTotal
+	
+FinAlgoritmo
