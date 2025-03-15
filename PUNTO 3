@@ -1,0 +1,26 @@
+//ngresar n números, almacenarlos en un arreglo y mostrar el numero o elemento mayor, así como el segundo mayor.
+Algoritmo Mayor_y_SegundoMayor
+    definir mayor, segundoMayor, numero Como Entero
+    mayor <- 0
+    segundoMayor <- 0
+	
+    escribir "¿Cuántos números ingresará?"
+    leer cantidad
+	
+    para i <- 1 Hasta cantidad hacer
+        escribir "Escriba su número:"
+        leer numero
+		
+        si numero > mayor Entonces
+            segundoMayor <- mayor
+            mayor <- numero
+        Sino
+            si numero > segundoMayor Entonces
+                segundoMayor <- numero
+            FinSi
+        FinSi
+    FinPara
+	
+    escribir "El número mayor es: ", mayor
+    escribir "El segundo mayor es: ", segundoMayor
+FinAlgoritmo
