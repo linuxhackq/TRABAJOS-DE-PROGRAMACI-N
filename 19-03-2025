@@ -1,0 +1,14 @@
+//Calcular e imprimir la suma de una secuencia de enteros, suponiendo que el primer entero leído especifica el número de valores a introducir
+Algoritmo sin_titulo
+	definir suma,num, n Como Entero
+	suma <- 0
+	escribir "ingrese la cantidad de numeros"
+	leer n 
+	para i <- 1 hasta n hacer 
+		escribir "ingrese su numero:" i
+		leer num 
+		suma <- suma + num 
+	FinPara
+	escribir "el resultado de la suma es: " suma 
+	
+FinAlgoritmo
