@@ -1,0 +1,12 @@
+Algoritmo sin_titulo
+	definir vector_numero como entero 
+	dimension vector_numero(10)
+	para i <- 1 Hasta 10 hacer 
+		vector_numero(i) <- Aleatorio(1,10)
+		
+	FinPara
+	escribir "NUMERO  CUADRADO  CUBO"
+	para i <- 1 hasta 10 hacer 
+		escribir numero_vector (i),"      " numero_vector (i) ^ 2,"       " numero_vector (i) ^ 3   
+	FinPara
+FinAlgoritmo
