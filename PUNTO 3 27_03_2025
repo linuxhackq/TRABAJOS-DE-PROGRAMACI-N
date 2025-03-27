@@ -1,0 +1,31 @@
+Algoritmo sin_titulo
+	
+    Escribir "Digite el valor de la moto: "
+    Leer Valor_moto
+    
+    Escribir "Diga la marca de la moto (Honda, Yamaha, Suzuki, u otras): "
+    Leer Marca_moto
+    
+    descuento = 0  
+	
+    Si Marca_moto = "Honda" Entonces
+        descuento = 0.05  
+    Sino Si Marca_moto = "Yamaha" Entonces
+			descuento = 0.08  
+		Sino Si Marca_moto = "Suzuki" Entonces
+				descuento = 0.10  
+			Sino
+				descuento = 0.02  
+			Fin Si
+		FINSI 
+		FINSI
+		
+			descuento_aplicado = Valor_moto * descuento
+			precio_final = Valor_moto - descuento_aplicado
+			
+			Escribir "---------------------------------------------"
+			Escribir "El precio de la moto es: ", Valor_moto
+			Escribir "Descuento aplicado: ", descuento * 100, "%"
+			Escribir "El precio final a pagar es: ", precio_final
+			Escribir "---------------------------------------------"
+FinAlgoritmo
