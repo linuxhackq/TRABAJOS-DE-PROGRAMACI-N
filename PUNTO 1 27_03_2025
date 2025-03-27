@@ -1,0 +1,36 @@
+Algoritmo sin_titulo
+	
+    Escribir "Nombre del cliente:"
+    Leer nombre_cliente
+    
+    Escribir "Cantidad de llantas compradas:"
+    Leer cantidad_llantas
+    
+    costo_llanta1 = 250
+    costo_llanta2 = 220
+    descuento1 = 0.20
+    descuento2 = 0.25
+
+    Si cantidad_llantas < 12 Entonces
+        precio_total = cantidad_llantas * costo_llanta1
+        descuento = precio_total * descuento1
+        precio_final = precio_total - descuento
+        precio_llanta = costo_llanta1
+        porcentaje_descuento = descuento1 * 100
+    Sino
+        precio_total = cantidad_llantas * costo_llanta2
+        descuento = precio_total * descuento2
+        precio_final = precio_total - descuento
+        precio_llanta = costo_llanta2
+        porcentaje_descuento = descuento2 * 100
+    Fin Si
+	escribir "------------------------------------------------------"
+    Escribir "> Cliente: ", nombre_cliente
+    Escribir "> Cantidad de llantas compradas: ", cantidad_llantas
+    Escribir "> Precio de cada llanta: ", precio_llanta " COP"
+    Escribir "> Descuento aplicado: ", porcentaje_descuento, "%"
+    Escribir "> Precio total sin descuento: ", precio_total " COP"
+    Escribir "> Descuento aplicado: ", descuento
+    Escribir "> Precio final a pagar: ", precio_final " COP"
+	escribir "------------------------------------------------------"
+FinAlgoritmo
