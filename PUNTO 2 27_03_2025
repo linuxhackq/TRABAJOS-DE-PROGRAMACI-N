@@ -1,0 +1,34 @@
+Algoritmo sin_titulo
+		
+		Escribir "Ingresa el precio de la moto: "
+		Leer precio_moto
+		
+		Escribir "Ingresa el día de la semana (lunes, martes, miércoles, jueves, viernes, sábado): "
+		Leer dia_semana
+		
+		Escribir "¿Es feriado? (sí/no): "
+		Leer es_feriado
+		
+		descuento = 0
+		
+		Si dia_semana = "martes" Entonces
+			descuento = 0.12
+		Sino Si dia_semana = "sábado" Entonces
+				descuento = 0.18
+			Sino Si es_feriado = "sí" Entonces
+					descuento = 0.25
+				Sino
+					descuento = 0  
+				Fin Si
+				
+				precio_final = precio_moto * (1 - descuento)
+				
+				Escribir "-----------------------------------------------"
+				Escribir "El precio de la moto es: ", precio_moto
+				Escribir "Descuento aplicado: ", descuento * 100, "%"
+				Escribir "El precio final a pagar es: ", precio_final
+				Escribir "-----------------------------------------------"
+			finsi 
+		FinSi
+		
+FinAlgoritmo
