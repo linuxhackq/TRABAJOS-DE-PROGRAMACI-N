@@ -1,0 +1,30 @@
+Algoritmo CRONOMETRO
+	definir horas, minutos, segundos Como Entero
+	
+	horas <- 0
+	minutos <- 0
+	segundos <- 0
+	
+	mientras Verdadero hacer 
+		escribir "==================CRONOMETRO==========================="
+		escribir "Horas " horas ":" "Minutos " minutos ":" "Segundos " segundos 
+		escribir "======================================================="
+		esperar 1 segundo
+		segundos <- segundos + 1
+		
+		Si segundos = 60 Entonces
+			segundos <- 0
+			minutos <- minutos + 1
+		FinSi
+		
+		Si minutos = 60 Entonces
+			minutos <- 0
+			horas <- horas + 1
+		FinSi
+		
+		Si horas = 24 Entonces
+			horas <- 0
+		FinSi
+	FinMientras
+	
+FinAlgoritmo
